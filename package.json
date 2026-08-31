@@ -1,0 +1,24 @@
+{
+  "name": "mern1",
+  "version": "1.0.0",
+  "description": "practice project to learn mern stack developing",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+ "start": "node backend/server.js",
+ "server": "nodemon backend/server.js",
+ "client": "npm run dev --prefix frontend",
+ "dev" : "concurrently \"npm run server\" \"npm run client\" "
+
+  
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.4",
+    "nodemon": "^3.1.14"
+  }
+}

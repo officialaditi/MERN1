@@ -1,12 +1,13 @@
 import Footer from "./component/Footer";
 import Header from "./component/Header";
+import HomeScreen from "./Screen/HomeScreen";
 
 const App = () => {
 return (
   <div>
     <Header/>
-    <div className="mt-10">
-
+    <div>
+<HomeScreen/>
     </div>
 <Footer/>
   </div>
