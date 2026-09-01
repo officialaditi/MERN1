@@ -1,16 +1,21 @@
 import Footer from "./component/Footer";
 import Header from "./component/Header";
 import HomeScreen from "./Screen/HomeScreen";
+import {BrowserRouter, Routes, Route} from 'react-router-dom'
 
 const App = () => {
 return (
-  <div>
+ 
+   
+   <BrowserRouter>
     <Header/>
-    <div>
-<HomeScreen/>
-    </div>
-<Footer/>
-  </div>
+    <Routes>
+      <Route path="/" element={<HomeScreen/>} />
+    </Routes>
+    <Footer/>
+   </BrowserRouter>
+
+
 )
 }
 export default App;

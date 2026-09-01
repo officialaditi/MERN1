@@ -3,6 +3,8 @@ import products from './data/product.js';
 import { configDotenv } from 'dotenv';
 import connectDB from './config/db.js';
 import colors from 'colors';
+import productRoutes from './routes/productRoutes.js';
+import { errorHandler, notFound } from './middleware/errorMiddleware.js';
 
 
 configDotenv();
@@ -13,14 +15,10 @@ app.get('/', (req, res) => {
     res.send('hello world server started')
 })
 
-app.get('/api/products', (req, res) => {
-    res.json(products)
-})
+app.use('/api/products', productRoutes);
 
-app.get('/api/products/:id', (req, res) => {
-    const product = products.find((prod) => prod.id == req.params.id);
-    res.json(product);
-})
+app.use(notFound);
+app.use(errorHandler)
 
 const port = process.env.PORT  || 8000
 app.listen(port, () => {

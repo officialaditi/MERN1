@@ -1,6 +1,6 @@
 const products = [
   {
-    id: 1,
+  
     name: "Classic Cotton T-Shirt",
     rating: 4.5,
     price: 799,
@@ -9,7 +9,7 @@ const products = [
     quantity: 25
   },
   {
-    id: 2,
+   
     name: "Slim Fit Denim Jeans",
     rating: 4.3,
     price: 1499,
@@ -18,7 +18,7 @@ const products = [
     quantity: 18
   },
   {
-    id: 3,
+   
     name: "Running Sneakers",
     rating: 4.7,
     price: 2499,
@@ -27,8 +27,7 @@ const products = [
     quantity: 12
   },
   {
-    id: 4,
-    name: "Oversized Hoodie",
+       name: "Oversized Hoodie",
     rating: 4.6,
     price: 1899,
     description: "Soft fleece oversized hoodie with a relaxed fit for everyday comfort.",
@@ -36,7 +35,7 @@ const products = [
     quantity: 20
   },
   {
-    id: 5,
+  
     name: "Leather Wallet",
     rating: 4.4,
     price: 999,
@@ -45,7 +44,7 @@ const products = [
     quantity: 15
   },
   {
-    id: 6,
+   
     name: "Stainless Steel Water Bottle",
     rating: 4.8,
     price: 699,
@@ -54,7 +53,7 @@ const products = [
     quantity: 30
   },
   {
-    id: 7,
+
     name: "Wireless Headphones",
     rating: 4.5,
     price: 2999,
@@ -63,7 +62,7 @@ const products = [
     quantity: 10
   },
   {
-    id: 8,
+  
     name: "Minimal Analog Watch",
     rating: 4.2,
     price: 2199,
@@ -72,7 +71,7 @@ const products = [
     quantity: 8
   },
   {
-    id: 9,
+  
     name: "Canvas Backpack",
     rating: 4.6,
     price: 1299,
@@ -81,7 +80,7 @@ const products = [
     quantity: 22
   },
   {
-    id: 10,
+ 
     name: "Polarized Sunglasses",
     rating: 4.4,
     price: 1599,
